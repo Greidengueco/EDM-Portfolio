@@ -9,5 +9,5 @@ Hi, I’m Greiden F. Gueco, a student from CCA BSIS-I102 who loves exploring new
 - High School: Graduated from Angeles City Science High School 
 
 ## My Projects:
-- Midterm Lab Task 1:
+- Midterm Lab Task 1: [Data Cleaning and Preparation using Excel](Midterm%20Lab%20Task%201/task1.md)
 - Midterm Lab Task 2:
