@@ -18,9 +18,15 @@ This portfolio shows how I cleaned and organized a transactional database by app
 
 ### Step 3: Before Data Cleaning  
 (See screenshot)  
+![raw](https://github.com/user-attachments/assets/e0375d56-cc93-4908-9492-90f4aa3642d7)
+
 
 ### Step 4: After Data Cleaning  
 (See screenshot)  
+![Image](https://github.com/user-attachments/assets/a39d301b-a79e-4026-9ca3-8fd579b1f356)
+
 
 ## Physical Data Model  
 (See diagram)
+![Image](https://github.com/user-attachments/assets/70b1ba2e-8dbc-4e3e-b655-dd9f3a6beaf2)
+
