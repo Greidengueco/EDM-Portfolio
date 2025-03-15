@@ -1,4 +1,4 @@
-# Midterm Lab Task 3
+# [Midterm Lab Task 3](https://github.com/user-attachments/files/19262195/Midterm.lab.task.3.Greiden.xlsx)
 - This portfolio focuses on creating an interactive Data Science Salary & Job Trends Dashboard using Excel. It examines job distribution, salary trends across roles and company sizes, and employment patterns by sector through pivot tables, charts, slicers, and an optional map for enhanced visualization.
 
 ## Step-by-Step Guide
