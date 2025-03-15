@@ -50,17 +50,17 @@ This portfolio shows how to clean and prepare data using Power Query. The datase
 
 # Screenshots
 ## Cleaned Table
-![Image](https://github.com/user-attachments/assets/77422a33-4267-4cfc-b933-1bcc93882ac2)
+![Image](https://github.com/user-attachments/assets/592dfe22-bd3b-4126-8691-980c9cc1136c)
 
 ## Advanced Editor
 ![Image](https://github.com/user-attachments/assets/6e4720ad-a233-4bdb-8d33-1ee3827f8d00)
 ## States
-![Image](https://github.com/user-attachments/assets/f2f54708-338a-4a73-8c87-56b1c5a731ed)
+![Image](https://github.com/user-attachments/assets/681e007c-1628-4394-969c-c14d7510dd87)
 ## Sal by Role Type
-![Image](https://github.com/user-attachments/assets/7b3dbc37-9950-41b5-a3b1-8a2955ff33ec)
+![Image](https://github.com/user-attachments/assets/a02e3c12-889c-4f93-9dd6-b10ec8276ddb)
 ## Sal by Role Size
-![Image](https://github.com/user-attachments/assets/c62e617e-12a0-4566-b883-19d0ffd1ca64)
+![Image](https://github.com/user-attachments/assets/5ea71110-b656-48eb-ac68-98f2a55e7b72)
 ## Sal by State
-![Image](https://github.com/user-attachments/assets/e174b0b2-0e46-4d77-ad84-56ac946c5a95)
+![Image](https://github.com/user-attachments/assets/e4a0521e-0633-4f05-aa18-d29f755561b6)
 ## Query Dependencies
 ![Image](https://github.com/user-attachments/assets/1d639aca-e72d-46cd-944b-ceb6abc49cfd)
