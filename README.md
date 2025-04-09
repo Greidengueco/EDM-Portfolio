@@ -2,7 +2,7 @@
 - This portfolio showcases the step-by-step process and screenshots of the tasks completed in the EDM subject.  
 
 ## About Me:  
-#### ![Image](https://github.com/user-attachments/assets/0651dd95-56b8-461c-9f66-491f164b8d0f)
+#### ![Image](https://github.com/user-attachments/assets/9e38da20-ac33-4eec-9415-6f78fbe2d93e)
 - Hi, I’m Greiden F. Gueco, a student from CCA BSIS-I102 who loves exploring new ideas and connecting with others. As an ENFP, I’m naturally curious, energetic, and enthusiastic about creative possibilities. I enjoy expressing myself, engaging in meaningful conversations, and embracing challenges with an open mind. My goal is to grow in the IT industry while bringing fresh ideas and a dynamic approach to my work.  
 
 ## Education:  
