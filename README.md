@@ -14,4 +14,4 @@ Hi, I’m Greiden F. Gueco, a student from CCA BSIS-I102 who loves exploring new
 - Midterm Lab Task 3: [Creating PIVOT TABLE and DASHBOARD](https://greidengueco.github.io/Midterm-Lab-Task-3/)
 
 ## My Projects For Finals
-- Finals Lab Task 1:
+- Finals Lab Task 1: [Creating a Database using MySql Workbench](https://greidengueco.github.io/Finals-Lab-Task-1/)
