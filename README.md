@@ -16,3 +16,4 @@
 
 ## My Projects For Finals
 - Finals Lab Task 1: [Creating a Database using MySql Workbench](https://greidengueco.github.io/Finals-Lab-Task-1/)
+- Finals Lab Task 2: [Transforming ER Model to Relational Tables](https://greidengueco.github.io/Finals-Lab-Task-2/)
