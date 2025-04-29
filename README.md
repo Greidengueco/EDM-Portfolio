@@ -18,3 +18,4 @@
 - Finals Lab Task 1: [Creating a Database using MySql Workbench](https://greidengueco.github.io/Finals-Lab-Task-1/)
 - Finals Lab Task 2: [Transforming ER Model to Relational Tables](https://greidengueco.github.io/Finals-Lab-Task-2/)
 - Finals Lab Task 3: [Table Manipulation Using MySQL](https://greidengueco.github.io/Finals-Lab-Task-3/)
+- Finals Lab Task 3.1: [Using MySQL Clause](https://greidengueco.github.io/Finals-Lab-Task-3.1/)
