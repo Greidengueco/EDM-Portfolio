@@ -1,8 +1,3 @@
-It looks like you're building an EDM portfolio to showcase your tasks! Here's how you can incorporate that structure into an anime-inspired design. This design will still keep all your essential content but have a more vibrant, dynamic feel to match the energetic anime theme:
-
-### Updated HTML with Your Portfolio Content
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,165 +6,141 @@ It looks like you're building an EDM portfolio to showcase your tasks! Here's ho
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EDM Portfolio</title>
     <style>
-        /* General body and background setup */
+        /* Global Styles */
         body {
             background-color: black;
-            background-image: url('https://media.giphy.com/media/6VgO6drwZQXPG/giphy.gif'); /* Anime gif background */
-            background-size: cover;
             color: white;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-position: center;
-            background-attachment: fixed;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7);
+            background: url('https://example.com/anime-war-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            animation: backgroundAnimation 20s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 30px 0;
             text-align: center;
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        h1 {
-            font-size: 4em;
-            color: #ffcc00; /* Bright yellow */
-            font-family: 'Noto Sans JP', sans-serif;
-            text-shadow: 0 0 20px rgba(255, 204, 0, 0.7), 0 0 30px rgba(255, 204, 0, 0.7);
-            margin: 0;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
             animation: glowHeader 1.5s ease-in-out infinite alternate;
         }
 
         @keyframes glowHeader {
             0% {
-                text-shadow: 0 0 20px rgba(255, 204, 0, 0.7), 0 0 30px rgba(255, 204, 0, 0.7);
+                text-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.7);
             }
             100% {
-                text-shadow: 0 0 25px rgba(255, 204, 0, 1), 0 0 50px rgba(255, 204, 0, 0.7);
+                text-shadow: 0 0 40px rgba(255, 0, 0, 1), 0 0 50px rgba(255, 0, 0, 1);
             }
         }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+        h1 {
+            font-size: 4em;
+            color: #ff0000; /* Bright red */
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
         }
 
         nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
             text-align: center;
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
         }
 
         nav a {
-            color: #ffcc00;
+            color: #ff0000;
             text-decoration: none;
             font-size: 1.2em;
             padding: 12px 20px;
-            margin: 0 20px;
-            transition: all 0.3s ease;
+            margin: 0 15px;
+            display: inline-block;
+            border: 2px solid transparent;
             border-radius: 5px;
+            transition: all 0.3s ease-in-out;
         }
 
         nav a:hover {
-            background-color: rgba(255, 204, 0, 0.7);
-            color: black;
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
-            text-shadow: 0 0 25px rgba(255, 204, 0, 1), 0 0 50px rgba(255, 204, 0, 0.7);
+            background-color: rgba(255, 0, 0, 0.6);
+            border-color: #ff0000;
+            transform: scale(1.1);
         }
 
         .content {
             padding: 40px;
-        }
-
-        .hero {
             text-align: center;
-            padding: 80px 0;
-            animation: slideIn 1s ease-in-out;
         }
 
         .hero img {
             width: 300px;
-            border: 5px solid rgba(255, 204, 0, 1);
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
-            transition: all 0.3s ease;
+            border: 5px solid #ff0000;
             border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+            transition: transform 0.3s ease-in-out;
         }
 
         .hero img:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(255, 204, 0, 0.7);
         }
 
-        .section h2 {
+        section h2 {
             font-size: 2.5em;
-            color: #ffcc00;
-            text-align: center;
-            text-shadow: 0 0 15px rgba(255, 204, 0, 0.7), 0 0 30px rgba(255, 204, 0, 0.7);
+            color: #ff0000;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 15px rgba(255, 0, 0, 0.7);
             margin-bottom: 20px;
         }
 
-        .section p, .section ul {
-            font-size: 1.1em;
-            text-align: center;
+        .section {
+            margin: 40px 0;
         }
 
         .box {
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 25px;
+            padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 0 25px rgba(255, 204, 0, 0.7);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
             margin-bottom: 40px;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes glow {
-            0% {
-                box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
-            }
-            100% {
-                box-shadow: 0 0 40px rgba(255, 204, 0, 0.7);
-            }
         }
 
         .box a {
             display: block;
             color: white;
-            background-color: rgba(255, 204, 0, 0.7);
+            background-color: rgba(255, 0, 0, 0.7);
             text-decoration: none;
             font-size: 1.2em;
             padding: 15px;
             margin: 10px 0;
             border-radius: 10px;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: all 0.3s ease-in-out;
         }
 
         .box a:hover {
-            background-color: rgba(255, 204, 0, 1);
+            background-color: #ff0000;
             color: black;
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
-            text-shadow: 0 0 25px rgba(255, 204, 0, 1), 0 0 50px rgba(255, 204, 0, 0.7);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+            transform: scale(1.1);
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #ffcc00;
-            padding: 15px;
             text-align: center;
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
-        }
-
-        footer p {
-            font-size: 1.1em;
-            text-shadow: 0 0 8px rgba(255, 204, 0, 0.7), 0 0 15px rgba(255, 204, 0, 0.7);
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -186,23 +157,50 @@ It looks like you're building an EDM portfolio to showcase your tasks! Here's ho
 </nav>
 
 <div class="content">
+    <!-- About Me Section -->
     <section id="about" class="hero">
         <h2>About Me</h2>
         <img src="https://github.com/user-attachments/assets/9e38da20-ac33-4eec-9415-6f78fbe2d93e" alt="Greiden F. Gueco">
         <p>Hi, I’m Greiden F. Gueco, a student from CCA BSIS-I102 who loves exploring new ideas and connecting with others. As an ENFP, I’m naturally curious, energetic, and enthusiastic about creative possibilities. I enjoy expressing myself, engaging in meaningful conversations, and embracing challenges with an open mind. My goal is to grow in the IT industry while bringing fresh ideas and a dynamic approach to my work.</p>
     </section>
 
+    <!-- Education Section -->
     <section id="education">
         <h2>Education</h2>
         <p><strong>College:</strong> Currently studying at City College of Angeles</p>
         <p><strong>High School:</strong> Graduated from Angeles City Science High School</p>
     </section>
 
-    <section id="projects" class="section">
+    <!-- Projects Section -->
+    <section id="projects">
         <h2>My Projects</h2>
-        
+
+        <!-- Midterm Projects -->
         <div class="box">
             <h3>Midterm Lab Tasks</h3>
             <ul>
                 <li><a href="https://greidengueco.github.io/Midterm-Lab-Task-1/">Data Cleaning and Preparation using Excel</a></li>
-                <li><a href="https://greidengueco.github.io/Midterm-Lab-Task-2/">Data Cleaning and Preparation
+                <li><a href="https://greidengueco.github.io/Midterm-Lab-Task-2/">Data Cleaning and Preparation using Power Query</a></li>
+                <li><a href="https://greidengueco.github.io/Midterm-Lab-Task-3/">Creating PIVOT TABLE and DASHBOARD</a></li>
+            </ul>
+        </div>
+
+        <!-- Finals Projects -->
+        <div class="box">
+            <h3>Finals Lab Tasks</h3>
+            <ul>
+                <li><a href="https://greidengueco.github.io/Finals-Lab-Task-1/">Creating a Database using MySql Workbench</a></li>
+                <li><a href="https://greidengueco.github.io/Finals-Lab-Task-2/">Transforming ER Model to Relational Tables</a></li>
+                <li><a href="https://greidengueco.github.io/Finals-Lab-Task-3/">Table Manipulation Using MySQL</a></li>
+                <li><a href="https://greidengueco.github.io/Finals-Lab-Task-3.1/">Using MySQL Clause</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2025 Greiden F. Gueco. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
