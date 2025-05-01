@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Notification - Solo Leveling Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Share Tech Mono', monospace;
+      background: black;
+      color: #fff;
+    }
+
+    body {
+      background: url('41b49324-8de0-4eeb-ba59-b8c1cda37146.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .notification-box {
+      background: rgba(0, 0, 0, 0.75);
+      border: 2px solid #00f0ff;
+      padding: 40px;
+      text-align: center;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00f0ff;
+      position: relative;
+      z-index: 2;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #00f0ff; }
+      50% { box-shadow: 0 0 25px #00f0ff; }
+      100% { box-shadow: 0 0 10px #00f0ff; }
+    }
+
+    .notification-title {
+      font-size: 1.5rem;
+      color: #00f0ff;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00f0ff;
+      padding-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .notification-text {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .highlight {
+      color: #ff3c57;
+    }
+
+    .countdown {
+      font-size: 1.2rem;
+      color: #ff3c57;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .system-btn {
+      padding: 10px 30px;
+      background: transparent;
+      border: 2px solid #00f0ff;
+      color: #00f0ff;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .system-btn:hover {
+      background-color: #00f0ff;
+      color: black;
+    }
+
+    .glitch {
+      color: #ff3c57;
+      border-color: #ff3c57;
+      animation: glitch 0.5s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 1px); }
+      40% { transform: translate(2px, -1px); }
+      60% { transform: translate(-1px, -2px); }
+      80% { transform: translate(1px, 2px); }
+      100% { transform: translate(0); }
+    }
+  </style>
+</head>
+<body>
+  <audio id="alertSound" autoplay>
+    <source src="https://cdn.pixabay.com/audio/2021/09/06/audio_7305c8fd82.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="notification-box">
+    <div class="notification-title">NOTIFICATION</div>
+    <div class="notification-text">
+      You have been chosen to visit <span class="highlight">my portfolio</span>.<br>
+      If you choose not to accept, your curiosity may fade forever.<br>
+      Will you accept?
+    </div>
+    <div class="countdown">Auto redirect in <span id="timer">10</span> seconds...</div>
+    <div class="button-row">
+      <a href="portfolio.html" class="system-btn">Yes</a>
+      <a href="#" class="system-btn glitch" onclick="glitchEffect()">No</a>
+    </div>
+  </div>
+
+  <script>
+    const timerEl = document.getElementById('timer');
+    let timeLeft = 10;
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timerEl.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = 'portfolio.html';  // Automatically redirects to portfolio
+      }
+    }, 1000);
+
+    function glitchEffect() {
+      const box = document.querySelector('.notification-box');
+      box.innerHTML = '<div class="notification-title">SYSTEM ERROR</div>' +
+                      '<div class="notification-text highlight">You cannot escape the system...</div>';
+      document.body.style.background = 'radial-gradient(circle, black, darkred)';
+    }
+  </script>
+</body>
+</html>
