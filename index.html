@@ -1,103 +1,156 @@
-<style>
-  body {
-    background-color: #2a1a77; /* Dark purple background */
-    color: #e3f2fd; /* Light blue text for contrast */
-    font-family: 'Share Tech Mono', monospace;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-  }
-
-  /* Floating animation */
-  @keyframes floating {
-    0% {
-      transform: translateY(0);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greiden F. Gueco - EDM Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: #00f0ff;
+      font-family: 'Share Tech Mono', monospace;
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
     }
-    50% {
-      transform: translateY(-15px);
+
+    /* Floating animation */
+    @keyframes floating {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
-    100% {
-      transform: translateY(0);
+
+    .main {
+      width: 90%;
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00f0ff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00f0ff;
+      height: 85vh;
+      overflow-y: scroll;
+      animation: floating 5s ease-in-out infinite;
     }
-  }
 
-  .main {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 3px solid #b11226; /* Blood-red outline */
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px #b11226, 0 0 20px rgba(177, 18, 38, 0.7); /* Blood-red shadow */
-    height: 85vh;
-    overflow-y: scroll;
-    animation: floating 5s ease-in-out infinite;
-  }
+    .main::-webkit-scrollbar {
+      display: none;
+    }
 
-  .main::-webkit-scrollbar {
-    display: none;
-  }
+    .main {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
 
-  .main {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid #00f0ff;
+      padding-bottom: 10px;
+      font-size: 2em;
+    }
 
-  h1 {
-    text-align: center;
-    border-bottom: 2px solid #b11226; /* Blood-red underline */
-    padding-bottom: 10px;
-    font-size: 2em;
-  }
+    .about-section {
+      text-align: center;
+      margin-top: 20px;
+    }
 
-  .about-section {
-    text-align: center;
-    margin-top: 20px;
-  }
+    .about-img {
+      width: 130px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00f0ff;
+    }
 
-  .about-img {
-    width: 130px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #b11226; /* Blood-red shadow around the image */
-  }
+    .about-text {
+      color: #ff3c57;
+      font-size: 16px;
+      padding: 10px;
+      text-align: left;
+    }
 
-  .about-text {
-    color: #ff3c57;
-    font-size: 16px;
-    padding: 10px;
-    text-align: left;
-  }
+    .about-table {
+      margin: 0 auto;
+    }
 
-  .about-table {
-    margin: 0 auto;
-  }
+    .about-table td {
+      vertical-align: top;
+      padding: 10px;
+    }
 
-  .about-table td {
-    vertical-align: top;
-    padding: 10px;
-  }
+    h2 {
+      color: #ff3c57;
+      margin-top: 30px;
+      font-size: 1.4em;
+    }
 
-  h2 {
-    color: #ff3c57;
-    margin-top: 30px;
-    font-size: 1.4em;
-  }
+    ul {
+      margin-left: 30px;
+    }
 
-  ul {
-    margin-left: 30px;
-  }
+    a {
+      color: #00f0ff;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      display: inline-block;
+      font-size: 1.05em;
+    }
 
-  a {
-    color: #00f0ff;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-    display: inline-block;
-    font-size: 1.05em;
-  }
+    a:hover {
+      color: #ff3c57;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
 
-  a:hover {
-    color: #ff3c57;
-    transform: scale(1.1);
-  }
-</style>
+  <div class="main">
+    <h1>Greiden F. Gueco - EDM Portfolio</h1>
+
+    <div class="about-section">
+      <table class="about-table">
+        <tr>
+          <td>
+            <img class="about-img" src="https://github.com/user-attachments/assets/9e38da20-ac33-4eec-9415-6f78fbe2d93e" alt="Greiden's Photo">
+          </td>
+          <td class="about-text">
+            Hi, I’m Greiden F. Gueco, a student from CCA BSIS-I102 who loves exploring new ideas and connecting with others. 
+            As an ENFP, I’m naturally curious, energetic, and enthusiastic about creative possibilities. I enjoy expressing myself, 
+            engaging in meaningful conversations, and embracing challenges with an open mind. My goal is to grow in the IT industry while 
+            bringing fresh ideas and a dynamic approach to my work.
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Education:</h2>
+    <ul>
+      <li>College: Currently studying at City College of Angeles</li>
+      <li>High School: Graduated from Angeles City Science High School</li>
+    </ul>
+
+    <h2>My Projects For Midterms:</h2>
+    <ul>
+      <li><a href="https://greidengueco.github.io/Midterm-Lab-Task-1/" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+      <li><a href="https://greidengueco.github.io/Midterm-Lab-Task-2/" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+      <li><a href="https://greidengueco.github.io/Midterm-Lab-Task-3/" target="_blank">Midterm Lab Task 3: Creating PIVOT TABLE and DASHBOARD</a></li>
+    </ul>
+
+    <h2>My Projects For Finals:</h2>
+    <ul>
+      <li><a href="https://greidengueco.github.io/Finals-Lab-Task-1/" target="_blank">Finals Lab Task 1: Creating a Database using MySql Workbench</a></li>
+      <li><a href="https://greidengueco.github.io/Finals-Lab-Task-2/" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+      <li><a href="https://greidengueco.github.io/Finals-Lab-Task-3/" target="_blank">Finals Lab Task 3: Table Manipulation Using MySQL</a></li>
+      <li><a href="https://greidengueco.github.io/Finals-Lab-Task-3.1/" target="_blank">Finals Lab Task 3.1: Using MySQL Clause</a></li>
+    </ul>
+
+  </div>
+
+</body>
+</html>
