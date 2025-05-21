@@ -19,4 +19,5 @@
 - Finals Lab Task 2: [Transforming ER Model to Relational Tables](https://greidengueco.github.io/Finals-Lab-Task-2/)
 - Finals Lab Task 3: [Table Manipulation Using MySQL](https://greidengueco.github.io/Finals-Lab-Task-3/)
 - Finals Lab Task 3.1: [Using MySQL Clause](https://greidengueco.github.io/Finals-Lab-Task-3.1/)
-- Finals Lab Task 5: [MongoDBCRUD](https://greidengueco.github.io/Finals-Lab-Task-5/)
+- Finals Lab Task 5: [Using SQL Views, Stored Procedures, and Functions](https://greidengueco.github.io/Finals-Lab-Task-5/)
+- Finals Lab Task 6: [MongoDBCRUD](https://greidengueco.github.io/Finals-Lab-Task-6/)
